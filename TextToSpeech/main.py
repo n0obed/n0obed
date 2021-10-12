@@ -9,7 +9,7 @@ from tkinter.constants import HORIZONTAL, LEFT, VERTICAL
 
 
 root = tk.Tk()
-root.title('Testing')
+root.title('TextToSpeech')
 root.iconbitmap('C:/Windows/System32/notebook.ico')
 root.geometry("700x400+800+050") # Set offset from top-left corner of screen as well as size
 root.maxsize(1000,700)
