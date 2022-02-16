@@ -1,0 +1,379 @@
+body {
+	top: 0px;
+	left: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	font-family: 'Times New Roman', serif;
+	background: white; /*rgba(206, 49, 42, 1)*/
+	/*margin-top: 10%;*/
+	overflow-x: hidden
+}
+button {
+	cursor: pointer;
+}
+header {
+	top: 0px;
+	left: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	position: fixed;
+	width: 100%;
+	height: 10%;
+	border-radius: 3px;
+	text-align: center;
+	z-index: 10;
+	animation: opacity-to-zero 0.1s forwards;
+	color: black;
+	background: white;
+}
+header:hover {
+	animation: opacity-to-one 0.1s forwards;
+}
+
+.icon-container {
+	right: 0vw;
+	top: 0vw;
+	margin-top: 1vh;
+	/*border: 1px solid;*/
+	position: absolute;
+	display: grid;
+	grid-template-columns: 5vw 5vw 5vw;
+	grid-template-rows: 5vh;
+	grid-gap: 0vw 3vw;
+	text-align: center;
+	padding-top: 4vh;
+	padding-left: 4vw;
+}
+
+#icon1 {
+	background: url("images/icons/insta2_resized.png") no-repeat;
+	grid-column: 1;}
+#icon1:hover {
+	width: 25px;
+	background: url("images/icons/insta2_hover_resized.png") no-repeat;}
+
+#icon2 {
+	width: 25px;
+	background: url("images/icons/searchicon_resized.png") no-repeat;
+	grid-column: 2;}
+#icon2:hover {
+	background: url("images/icons/searchicon_hover_resized.png") no-repeat;}
+
+#icon3 {
+	width: 25px;
+	background: url("images/icons/twitterlogo_resized.png") no-repeat;
+	grid-column: 3;}
+#icon3:hover {
+	background: url("images/icons/twitterlogo_hover_resized.png") no-repeat;}
+
+#logo {
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	margin-top: 0px;
+	margin-left: 0px;
+	width: 25%;
+	height: 80%;
+	object-fit: cover;
+}
+
+#Box1 {
+	top: 0px;
+	margin-top: 5%;
+	width: 80%;
+	height: 119vh;
+	background: white;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#text-box-1 {
+	padding-top: 3%;
+	text-align: center;
+	color: black;
+	font-size: xx-large;
+	position: relative;
+	font-weight: bold;
+}
+
+.vehicles {
+	position: relative;
+	width: 100%;
+	display: flex;
+	padding-top: 2vh;
+	justify-content: space-around;
+	/*border: 1px solid;*/
+}
+.vehicles-items {
+	position: relative;
+	width: 30%;
+	/*border: 1px solid;*/
+	text-align: center;
+}
+.vehicles-items > img {
+	width: 100%;
+}
+.vehicles-items > p {
+	font-weight: bold;
+
+} 
+.vehicles-items > button {
+	font-size: medium;
+	font-weight: bold;
+	width: 50%;
+	background: white;
+	border: 3px solid red;
+	color: red;
+	height: 4vh;
+	text-decoration: none;
+}
+.vehicles-items > button:hover {
+	background: red;
+	color: white;
+	border-radius: 5px;
+}
+#Box1 > img {
+	padding-top: 5vh;
+	position: relative;
+	width: 100%;
+}
+
+.limited-edition {
+	top: 3vh;
+	position: relative;
+}
+.limited-edition > img {
+	position: relative;
+}
+#btn-limited-edition {
+	left: 15%;
+	top: 25%;
+	position: absolute;
+	width: 7vw;
+	background: black;
+	color: white;
+	border: 3px solid white;
+	font-size: medium;
+	font-weight: bold;
+}
+#btn-limited-edition:hover {
+	color: black;
+	background: white;
+	border-radius: 5px;
+}
+#div-limited-edition {
+	padding-top: 1vh;
+	color: white;
+	left: 10%;
+	top: 40%;
+	position: absolute;
+}
+
+
+#Box2 {
+	padding-top: 100px;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+#btn-box2 > button {
+	top: 65%;
+	left: 65%;
+	width: 10vw;
+	height: 5vh;
+	position: absolute;
+	background: transparent;
+	color: white;
+	font-weight: bold;
+	font-size: medium;
+	border: 3px solid white;
+
+}
+#btn-box2 > button:hover {
+	color: black;
+	background: white;
+	border-radius: 4px;
+}
+#slide1 {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background: black;
+	border: 1px solid;
+	/*display: none;*/
+	animation-name: slideone;
+	animation-duration: 9s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+#image-slide1{
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	object-fit: cover;
+}
+#text-slide1 {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-27%);
+	color: white;
+	font-size: xx-large;
+	font-weight: bold;
+}
+#text2-slide1 {
+	position: absolute;
+	top: 45%;
+	left: 75%;
+	transform: translateX(-27%);
+	color: white;
+	font-size: xx-large;
+	font-weight: bold;
+}
+#slide2 {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background: black;
+	object-fit: cover;
+	border: 1px solid blue;
+	/*display: none;*/
+	animation-name: slidetwo;
+	animation-duration: 9s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	overflow: hidden;
+}
+#image-slide2 {
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	object-fit: cover;
+}
+#text-slide2 {
+	position: absolute;
+	top: 10%;
+	transform: translateX(27%);
+	color: white;
+	font-size: xx-large;
+	font-weight: bold;
+}
+#slide3 {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background: black;
+	border: 1px solid;
+	/*display: none;*/
+	animation-name: slidethree;
+	animation-duration: 9s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	overflow: hidden;
+}
+#image-slide3 {
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	object-fit: cover;
+}
+#text-slide3 {
+	position: absolute;
+	top: 10%;
+	left: 55%;
+	color: white;
+	font-size: xx-large;
+	font-weight: bold;
+}
+
+
+#Box3 {
+	border-top: 10px solid white;
+	width: 100vw;
+	height: 125vh;
+	background: black;
+	position: relative;
+	color: white;
+	text-align: center;
+}
+#Box3 > #video-wrap {
+	top: 100px;
+	width: 80vw;
+	position: relative;
+	text-align: center;
+} 
+#video-wrap > video {
+	position: relative;
+	object-fit: cover;
+	top: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+	left: 10vw;
+}
+
+
+#Box4 {
+	border-top: 10px solid white;
+	width: 100vw;
+	height: 100vh;
+	background: blue;
+	position: relative;
+	color: white;
+	text-align: center;
+}
+
+
+@keyframes slideone {
+	0% {height: 100vh;}
+	28% {height: 100vh;}
+	32% {height: 0vh;}
+	66% {height: 0vh;}
+	96% {height: 0vh;}
+	100% {height: 100vh;}
+}
+@keyframes slidetwo {
+	0% {height: 0vh;}
+	1% {height: 100vh;}
+	60% {height: 100vh;}
+	64% {height: 0vh;}
+	96% {height: 0vh;}
+	100% {height: 100vh;}
+}
+@keyframes slidethree {
+	0% {height: 0vh;}
+	33% {height: 0vh;}
+	55% {height: 0vh;}
+	60% {height: 0vh;}
+	64% {height: 100vh;}
+	92% {height: 100vh;}
+	96% {height: 100vh;}
+	100% {height: 100vh;}
+}
+
+@keyframes opacity-to-one {
+    0% {opacity: 0.1;}
+    40% {opacity: 0.4;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+@keyframes opacity-to-zero {
+    0% {opacity: 1;}
+    40% {opacity: 0.6;}
+    50% {opacity: 0.5;}
+    100% {opacity: 0.05;}
+}
