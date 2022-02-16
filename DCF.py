@@ -1,3 +1,4 @@
+# DCF stands for Discounted Cash Flow, an analysis method to find the price range for a stock.
 
 # Free Cash Flow 209.7
 # Avg of FCF = 140.36
