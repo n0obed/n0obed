@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/> <!-- for icons -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>N0obed</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-custom"> <!-- navbar-dark is theme, expand-md is expand on medium devices -->
+        <div class="container">
+            <a href="index.html" class="navbar-brand">N0obed</a>
+
+            <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse lead" id="navmenu">
+                <ul class="navbar-nav ms-auto"> <!--ms-auto aligns margin to side for ul -->
+                    <li class="nav-item">
+                        <a target="_blank" href="content/projects/project.html" class="nav-link text-light">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" href="content/profile/aboutme.html" class="nav-link text-light">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" href="#instructors" class="nav-link text-light">Instructions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Showcase -->
+    <section class="text-light p-5 text-center text-sm-start"> <!--text-light changes font-color, pt-5 is padding top to high(5) or px for x-axis, sm text align to start -->
+        <div class="container">
+            <div class="d-md-flex align-"> <!--flex box for large devices-->
+                <div>
+                    <h1 class="text-dark">This is a software powered world.</h1>
+                    <p class="lead mt-4 text-dark text-opacity-100"> <!--margin y axis to 4, lead gives it good font and font-size.-->
+                        <span>I wonder who said the above words, hmm...</span> Anyway I am <span class="text-black">Nikhil</span>. Currently diverting a large portion of my efforts to get an undergraduate Comp. Sc. in Vellore Institute of Technology (VIT).</p>
+                        <a href="https://duckduckgo.com/?q=India+gate&ia=web&iaxm=maps&strict_bbox=0&bbox=28.615826161419726%2C77.22580594103707%2C28.61008471096776%2C77.2350239768634" class="btn btn-light btn-lg my-sm-4 hover-btn " target="_blank">
+                        <i class="bi bi-geo-alt"></i> India</a>
+                </div>
+                <img src="./images/codeGS.png" alt="" class="d-sm-flex d-none img-fluid w-50 mx-md-4"> <!--image bound to boundary of parent, width cut to 50% of width-->
+            </div>
+        </div>
+    </section>
+    <hr width="80%" style="margin-left: 10%;">
+    <!-- Cards -->
+    <section class="p-3 cards-bg">
+        <div class="container">
+            <h2> Current Projects (Not Updated)</h2>
+            <div class="row text-center">
+                <div class="col-sm" >
+                    <div class="card card-bg" style="width: 100%;">
+                        <div class="card-body text-light" style="width: 100%;">
+                          <h5 class="card-title">Project 1</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">2021 May - Present</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-light mt-3 btn-black-white">
+                            <i class="bi bi-caret-right"></i> Read More
+                          </a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card card-bg" style="width: 100%;">
+                        <div class="card-body text-light">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-light mt-3 btn-black-white">
+                            <i class="bi bi-caret-right"></i> Read More
+                          </a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card card-bg" style="width: 100%;">
+                        <div class="card-body text-light">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-light mt-3 btn-black-white">
+                            <i class="bi bi-caret-right"></i> Read More
+                        </a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr width="80%" style="margin-left: 10%;">
+    <!-- Recently Completed Projects -->
+    <section class="p-3">
+        <div class="container">
+            <h2>Recently Completed Projects</h2>
+            <div class="col lead">
+                <div class="row" style="width: 60%;">
+                    <span class="text-muted " style="width: auto; padding-right: 0%;">Jan 2022</span>
+                    <a href="https://github.com/n0obed/Stock_Market" class="darkText text-start col">Stock Market Data | C#</a>
+                </div>
+                <div class="row" style="width: 60%;">
+                    <span class="text-muted " style="width: auto; padding-right: 0%;">Jan 2022</span>
+                    <a href="https://github.com/n0obed/PeriodicTable-/tree/main/Project1/src/main/java/com/example/project1" class="darkText text-start col">Periodic Table | Java</a>
+                </div>
+                <div class="row" style="width: 60%;">
+                    <span class="text-muted " style="width: auto; padding-right: 0%;">Nov 2021</span>
+                    <a href="https://github.com/n0obed/n0obed/tree/main/TextToSpeech" class="darkText text-start col">Text To Speech | Python</a>
+                </div>
+                <div class="row" style="width: 60%;">
+                    <span class="text-muted " style="width: auto; padding-right: 0%;">Oct 2021</span>
+                    <a href="https://github.com/n0obed/n0obed/tree/main/Dodge" class="darkText text-start col">Dodge Webpage | HTML&CSS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr width="80%" style="margin-left: 10%;">
+    <!-- Learn Sections -->
+    <section class="p-5">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md">
+              <img src="./images/laptopGS.png" class="img-fluid"  />
+            </div>
+            <div class="col-md p-5">
+              <h2>About me</h2>
+              <p>
+                My works and hobbies usually revolve around a device the one you see here, the great laptop. My previous projects include workings based on Python, SQL, HTML, CSS, C++, C# and little bit of Java.
+                I do have plans to get into CTF's eventually, hopefully get some guys with similar interests in VIT!
+              </p>
+              <a href="#" class="btn btn-light mt-3 hover-btn">
+                <i class="bi bi-caret-right"></i> Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
