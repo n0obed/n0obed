@@ -1,0 +1,59 @@
+@media only screen and (min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .col-sm {
+        margin: 2% 0px;
+    }
+}
+
+:root {
+    --old-white: rgb(206, 199, 180);
+    --dull-white: rgb(204, 203, 201);
+    --dull-black: rgb(33, 37, 41);
+}
+
+body {
+    padding-top: 5%;
+	font-family: 'Times New Roman', serif;
+	background: var(--dull-white);  
+}
+a {
+    color: white;
+}
+a:hover {
+    color: var(--dull-white);
+}
+
+.navbar-custom{
+    background-color: rgba(33, 37, 41, 1);
+}
+
+.cards-bg {
+    background-color: var(--dull-white);
+}
+.card-bg {
+    background: var(--dull-black);
+}
+
+.btn-black-white:hover {
+    color: white;
+    background-color: transparent; /* var(--dull-black); */
+}
+
+
+.darkText {
+    color: var(--dull-black);
+}
+.darkText:hover {
+    color: var(--dull-black);
+    text-decoration: none;
+}
+
+.hover-btn:hover {
+    background-color: var(--dull-black);
+    color: white;
+    border-color: white;
+}
