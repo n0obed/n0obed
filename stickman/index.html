@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Great Page</title>
+<link rel="icon" href="./favicon.ico">
+</head>
+
+
+
+<! --
+top right bottom left
+
+-->
+<style>
+body {
+	background:silver;
+	font-family: verdana, serif;
+	font-size: 20px;
+}
+
+
+#divButton {
+	position: relative;
+	border: solid 0px;
+	padding: 50px 0px 0px 100px;
+	margin: 0px 0px 0px 0px;
+	height: 100px;
+}
+
+
+#animatedButton {
+	position: absolute;
+	background-color: #354757;
+	color: #ffffff;
+	font-size: 16px;
+	padding: 0;
+	margin: 0px 0px 0px 30px;
+	text-align: center;
+	border-radius: 3px;
+	border:none;
+	box-shadow: 0 2px 2px 0 #354757;
+	left: 10%;
+	height: 20%;
+	width: 10%;
+	animation: buttonAnimation 3s infinite;
+}
+
+#firstheader
+{
+	color:red;
+}
+
+#date {
+	position:fixed;
+	top:10px;
+	right:10px;
+}
+
+
+
+
+
+
+@keyframes buttonAnimation {
+	0% {background-color: #354757; opacity: 1;}
+	50% {background-color: silver; opacity: 0;}
+	100% {background-color: #354757; opacity: 1;}
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+<body>
+
+<h1>This is a Heading</h1>
+<p align='right' id='date' >Time: 00:00:00 AM</p>
+
+<p>This is a paragraph.</p>
+
+<p title="TheTitle">This is supposed to be a title <br>for a site.</p>
+<h2 id="firstheader">STAY ALERT! Stickman Infested</h2>
+<img src="https://th.bing.com/th/id/R.11e241855f3b9182909ff7ff94e20890?rik=6Aou4ARc%2bu3GcQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fstickman-png-hd-free-1074x2400-stick-man-wallpapers-1074.png&ehk=Uu9QBk4qi5xO4RBjwuhrFuOwY4IrHUMElpSF%2ffpnbKo%3d&risl=&pid=ImgRaw&r=0" 
+ height="240" alt="Stickman">
+ 
+<br>
+<a href="https://www.youtube.com/shorts/PYziDvOp_N8?feature=share" target="_blank">Youtube</a>
+<br>
+<a href="https://geekprank.com/win7-update/" target="_blank">Do Not Click!</a>
+<br>
+
+<b>This <i>text</i> is bold.</b>
+
+
+<h3 class="onesecond">Things to buy</h3>
+<ul>
+  <li>Cashew Nuts</li>
+  <li>Almond</li>
+  <li>Milk</li>
+  <li>Vegatables</li>
+  <ol> 
+	<li>Carraots</li>
+	<li>Onions</li>
+	<li>Beets</li>
+	<li>Coriander Leaf</li>
+  </ol>
+</ul>
+<div width="10px" id="divButton">
+<button id="animatedButton" onmouseover="makeTransparent(this)"
+        onclick="earthquakeClick(self)">Click Me</button>
+</div>
+
+<br>
+<video autoplay loop muted width="750px" id="earthquake">
+<source src="./video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<br>
+<br>
+<img src="https://i.pinimg.com/originals/9c/6a/17/9c6a174e72e4c70de7b13fca86063922.gif">
+
+<form>
+  <input list="Cars" name="carsList">
+  <datalist id="Cars">
+    <option value="Audi Q7">
+    <option value="Dodge Challenger">
+    <option value="Toyota LandCruiser">
+    <option value="Ford Edge">
+    <option value="Porsche 911">
+  </datalist>
+  <input type="submit">
+</form>
+
+
+
+<form target="_blank" method="post">
+	<label for="fname">First Name:</label><br>
+	<input type="text" id="fname" name="fname" value="Green"><br>
+	<label for="lname">Last Name:</label><br>
+	<input type="text" id="lname" name="lname" value="Cat"><br><br>
+	<input type="submit" value="Submit">
+</form>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+<script>
+setInterval(changecolor, 400);
+setInterval(date, 1000);
+variables = {pause : false, pause_animation_playing : false};
+
+
+document.getElementById("animatedButton").style.animationPlayState = "paused"
+
+
+
+
+
+
+function changecolor() {
+	var onesecond = document.getElementsByClassName('onesecond');
+	for (let i = 0; i < onesecond.length; i++) {
+		onesecond[i].style.color = (onesecond[i].style.color == 'black') ? 'blue' : 'black';
+	}
+}
+
+function date() {
+	const d = new Date();
+	document.getElementById("date").innerHTML = "Time: " + d.toLocaleTimeString();
+}
+
+function makeTransparent(x) {
+	if (variables.pause_animation_playing == false)
+	{
+		variables.pause_animation_playing = true;
+		x.style.animationPlayState = "initial";
+		setTimeout(changePosButton, 1500);
+		console.log("Function Complete");
+	}
+	
+}
+
+function makeSolid(x) {
+	x.style.animation = "";
+}
+
+function changePosButton() {
+	let x = document.getElementById("animatedButton");
+	let x_pos = Math.floor((Math.random() * 90) + 1);
+	x.style.left=x_pos + "%";
+	setTimeout(() => x.style.animationPlayState = "paused", 1500);
+	variables.pause_animation_playing = false;
+}
+
+function earthquakeClick(x) {
+	x.position
+	let video = document.getElementById("earthquake");
+	console.log(video);
+	if (!(variables.pause)) {
+	  variables.pause = true;
+	  video.pause();
+	}
+	else {
+	  variables.pause = false;
+	  video.play();
+	}
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+</html>
+
+<! --
+font-family: verdana, serif;
+-->
